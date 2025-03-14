@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        
+        h1{
+            text-align: center;
+        }
+        form{
+            text-align: left;
+            width:35%;
+            margin: auto;
+        
+
+        }   
+        label, input, select, textarea{
+            display: block;
+            width: 100%;
+           padding: 2px; 
+           
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            display: inline;
+            width: auto;
+            margin-right: 5px;
+
+        }
+
+        button{
+            display: inline-block;
+            margin-right: 5px;
+        }
+        div.gender{
+            display: flex;
+        }
+        div{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1 >Registration Form</h1>
+    <form action="">
+      <label for="username">Enter your fullname</label>
+      <input type="text" name="username" placeholder="username"  required><br>
+      
+      <label for="email">Enter your email</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+      
+      <label for="phone Number">Phone Number</label>
+      <input type="Phone number" name="Phone Number" placeholder="+265 123 789 000"><br>
+      
+      <label for="age">Enter your age</label>
+      <input type="number"  name="age" min="18" required><br><br>
+    <div class="gender">
+      <label for="Gender">Gender</label><br>
+      <input type="radio" value="Male"  name="gender" style="margin: 5px;">
+      <label for="gender" style="margin: 5px;">Male</label><br>
+ 
+      <input type="radio" value="Female"  name="gender" style="margin: 5px;">
+      <label for="gender" style="margin: 5px;">Female</label><br>
+
+      <input type="radio" value="Other"  name="gender">
+      <label for="gender" style="margin: 5px;">Other</label><br><br>
+    </div>
+   
+
+                 <!-- field of interest-->
+      <label for="field of interest">Field of interest</label>           
+      <select name="field of interest" id="">
+            <option value="AI">Artificial intelligence</option>\
+            <option value="Web dev">Web development</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Data science">Data science</option>
+            <option value="Cloud computing">Cloud computing</option>
+      </select>
+      <br>
+
+<div class="attendance">
+      <label for="Attendance">Mode of attendance</label>
+      <input type="radio" value="Virtully" name="Attendance">
+      <label for="Attendance">Virtually</label>
+
+      <input type="radio" value="In-Person" name="Attendance">
+      <label for="Attendance">In-Person</label>
+</div>
+
+      <br>
+      <label for="excitment level">What is your excitement level</label>
+      <input type="range" min="0" max="5"><br>
+
+      <br>
+      <label for="Special Request">Special Request</label><br>
+      <textarea name="special request" id="special request"></textarea><br>
+      
+
+      <label for="Checkbox">I agree to terms & Conditions</label>
+      <input type="checkbox" id="checkbox"><br>
+      
+      <br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+
+      
+    </form>
+</body>
+</html>
